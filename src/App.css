@@ -1,38 +1,77 @@
-.App {
-  text-align: center;
+.buttonstyles {
+  border-radius: "5px";
+  padding: 10px 15px;
+  border: "1px solid #ccc";
+  background-color: #6379d8;
+  color: #fff;
+  cursor: pointer;
+  margin-right: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Your CSS file or within style tags */
+/* TopSales.css */
+/* TopSales.css */
+.sales-container {
+  margin-top: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.sales-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.sales-table th,
+.sales-table td {
+  padding: 10px;
+  text-align: left;
+}
+
+.sales-table th {
+  background-color: #bce8ec;
+  font-weight: bold;
+}
+
+.sales-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.sales-table tbody tr:hover {
+  background-color: #eaeaea;
+}
+
+.sales-location {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.sales-location h5 {
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.sales-location p {
+  margin-bottom: 0;
+  font-size: 14px;
+}
+@media (max-width: 767px) {
+  /* Add overflow-x:auto to allow horizontal scrolling */
+  .sales-container,
+  .table-data,
+  .custom-table {
+    overflow-x: auto;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 320px) {
+  /* Adjustments for iPhone SE or similar smaller screens */
+  .header {
+    padding: 5px; /* Adjust as needed */
   }
-  to {
-    transform: rotate(360deg);
+
+  .custom-image {
+    width: 40px;
+    height: 40px;
   }
+
+  /* Other specific adjustments */
 }

@@ -1,0 +1,74 @@
+.recent-orders {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-bar {
+  margin-left: 20px; /* Adjust margin as needed */
+}
+
+.search-input {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  /* Additional styling for the search input */
+}
+.customer-table {
+  margin-top: 15px;
+}
+.table-data {
+  width: 100%;
+
+  box-sizing: border-box;
+}
+
+.custom-table {
+  width: 100%;
+  border-collapse: none;
+  margin-top: 20px;
+}
+
+.custom-table th,
+.custom-table td {
+  padding: 10px;
+}
+
+.custom-table th {
+  background-color: #faa7a7;
+  font-weight: bold;
+  text-align: left;
+}
+
+.custom-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.custom-table tbody tr:hover {
+  background-color: #eaeaea;
+}
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+}
+
+.right-section {
+  display: flex;
+}
+
+.right-section button {
+  margin-left: 10px;
+  border: none;
+  background-color: #054282;
+  color: white;
+  padding: 10px 15px;
+
+  /* Additional styles for buttons */
+}

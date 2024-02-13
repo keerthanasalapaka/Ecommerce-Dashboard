@@ -1,0 +1,122 @@
+/* Button styles */
+.buttonstyles {
+  border-radius: 5px;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  background-color: #6379d8;
+  color: #fff;
+  cursor: pointer;
+  margin-right: 10px;
+  height: auto; /* Set height to auto to adjust based on content */
+  min-height: 40px; /* Minimum height for the button */
+  display: inline-flex; /* Ensure button height is consistent with its content */
+  align-items: center; /* Align content vertically */
+}
+
+/* Adjustments for small screens */
+@media (max-width: 767px) {
+  /* Ensure horizontal scroll for tables on small screens */
+  .sales-container,
+  .table-data,
+  .custom-table {
+    overflow-x: auto;
+  }
+  .buttonstyles {
+    height: 20px;
+  }
+}
+
+/* Adjustments for extra small screens */
+@media (max-width: 576px) {
+  /* Ensure buttons are displayed in a column and centered */
+  .col-md-8.d-flex.justify-content-end {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .border.rounded.p-2.mr-3.buttonstyles {
+    margin-bottom: 10px;
+  }
+
+  /* Ensure tables are scrollable horizontally on extra small screens */
+  .sales-table {
+    overflow-x: auto;
+    display: block;
+  }
+
+  /* Adjust table cell padding */
+  .sales-table th,
+  .sales-table td {
+    padding: 8px;
+  }
+
+  /* Sales by Location section adjustments */
+  .col-md-4.mt-3 {
+    margin-top: 20px; /* Adjust top margin */
+  }
+
+  .sales-location {
+    margin-top: 10px; /* Adjust top margin */
+    padding: 8px; /* Adjust padding */
+  }
+}
+
+/* Adjustments for very small screens */
+@media (max-width: 320px) {
+  /* Header padding adjustment */
+  .header {
+    padding: 5px;
+  }
+
+  /* Custom image size adjustment */
+  .custom-image {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* Additional general styles */
+
+.sales-container {
+  margin-top: 20px;
+}
+
+.sales-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.sales-table th,
+.sales-table td {
+  padding: 10px;
+  text-align: left;
+}
+
+.sales-table th {
+  background-color: #bce8ec;
+  font-weight: bold;
+}
+
+.sales-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.sales-table tbody tr:hover {
+  background-color: #eaeaea;
+}
+
+.sales-location {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.sales-location h5 {
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.sales-location p {
+  margin-bottom: 0;
+  font-size: 14px;
+}

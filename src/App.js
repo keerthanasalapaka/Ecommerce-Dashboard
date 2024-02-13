@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import Dashboardmake from "./viewDashboard";
+import Radialchart from "./chartdesign";
+import ReactTable from "./table";
+import TopSales from "./productGenerators";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="container">
+        <Dashboardmake />
+        <Radialchart />
+        <ReactTable />
+        <TopSales />
+      </div>
     </div>
   );
 }

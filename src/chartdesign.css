@@ -1,0 +1,27 @@
+.target-container {
+  margin-top: 10px;
+  background-color: rgb(249, 244, 244);
+}
+.target-column {
+  padding-top: 15px;
+}
+.target-column,
+.stat-column {
+  border: 0.5px solid rgb(230, 227, 227);
+  background-color: white;
+}
+
+.target-paragraph {
+  text-align: center;
+  align-items: center;
+}
+.stat-right {
+  display: flex;
+  margin-top: 8px;
+}
+.stat-right p {
+  margin: 8px;
+}
+.stat-first-column {
+  margin-top: 15px;
+}
